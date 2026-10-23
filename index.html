@@ -2,347 +2,326 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="robots" content="noindex, nofollow">
 <title>Modifié Barber Salon · pánske holičstvo v Topoľčanoch — neoficiálny návrh</title>
-<meta name="description" content="Neoficiálny návrh webu pre Modifié Barber Salon — pánske holičstvo na Sama Chalupku v Topoľčanoch. Služby, otváracie hodiny a objednanie online.">
-<meta name="theme-color" content="#3b2217">
+<meta name="description" content="Modifié Barber Salon — pánske holičstvo na Sama Chalupku v Topoľčanoch: služby, otváracie hodiny a kontakt. Neoficiálny návrh webu od Darwon.">
+<meta name="theme-color" content="#17181A">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@400;500;600&family=Ultra&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
 <style>
 :root{
-  --wall:#e3e4e0; --ink:#1c1613; --ink2:#4b4541; --steel:#7f888d; --steeld:#566065;
-  --lth:#3b2217; --lthhi:#4b2c1e; --lthlo:#26140d;
-  --tan:#e6cba5; --tan2:#c4a580;
-  --brass:#c6963b; --brasshi:#f2d993; --brasslo:#7f5a1c;
-  --sw:600px; --gap:72px;
-  --disp:"Ultra",Georgia,serif; --text:"IBM Plex Sans Condensed","Arial Narrow",Arial,sans-serif;
+  --night:#17181A; --night2:#202124; --paper:#F2F1EE; --ink:#1B1C1E; --mute:#5E5C57;
+  --line:rgba(27,28,30,.15); --brass:#B08D57; --brass-ink:#7A5F33;
+  --on:#ECEAE5; --on2:#A6A39C; --online:rgba(236,234,229,.16);
+  --head:"Oswald","Arial Narrow",Arial,sans-serif; --body:"Libre Baskerville",Georgia,serif;
+  --max:1200px; --pad:40px;
 }
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
-body{margin:0;background:var(--wall);color:var(--ink);font:400 17px/1.55 var(--text)}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 16.5px/1.65 var(--body)}
 img{max-width:100%;height:auto;display:block}
 a{color:inherit}
-a[href^="tel:"]{white-space:nowrap}
-h1,h2,h3,p,ul,dl,dd,figure{margin:0;padding:0}
+h1,h2,h3,p,ul,ol,dl,dd,figure,blockquote,table{margin:0;padding:0}
 ul{list-style:none}
+address{font-style:normal}
 :focus-visible{outline:2px solid var(--brass);outline-offset:3px}
-.vh{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.wrap{max-width:calc(var(--max) + 2*var(--pad));margin:0 auto;padding:0 var(--pad)}
+.lab{font:500 12.5px/1.3 var(--head);letter-spacing:.2em;text-transform:uppercase}
+.num{font-family:var(--head);font-variant-numeric:tabular-nums lining-nums}
+.u{text-decoration:none;background:linear-gradient(currentColor,currentColor) 0 100%/0 1px no-repeat;transition:background-size .2s ease}
+.u:hover,a:hover>.u{background-size:100% 1px}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 26px;background:var(--brass);color:var(--night);text-decoration:none;font:500 15px/1 var(--head);letter-spacing:.12em;text-transform:uppercase;border:1px solid var(--brass);border-radius:2px;transition:background-color .2s ease,color .2s ease}
+.btn:hover{background:transparent;color:var(--brass)}
+.btn.ghost{background:transparent;color:var(--on);border-color:var(--online)}
+.btn.ghost:hover{border-color:var(--on)}
 
-/* Darwon pruh */
-.notice{background:var(--ink);color:#d9d4cc;font-size:13.5px;line-height:1.4;padding:8px 16px;text-align:center}
+/* pruh */
+.notice{background:var(--paper);color:var(--ink);font-size:13px;line-height:1.45;padding:9px 16px;text-align:center;border-bottom:1px solid var(--line)}
 
-/* hlavička na stene */
-.top{max-width:1280px;margin:0 auto;padding:22px 40px 18px;display:flex;align-items:center;gap:36px}
-.mark{text-decoration:none;display:flex;align-items:baseline;gap:12px;margin-right:auto}
-.mark b{font:400 25px/1 var(--disp);letter-spacing:.01em}
-.mark span{font:600 12px/1 var(--text);letter-spacing:.2em;text-transform:uppercase;color:var(--steeld)}
-.nav ul{display:flex;gap:26px}
-.nav a,.navm a{display:inline-flex;align-items:center;gap:9px;min-height:44px;text-decoration:none;font:600 13px/1 var(--text);letter-spacing:.16em;text-transform:uppercase}
-.rivet{flex:none;width:12px;height:12px;border-radius:50%;background:radial-gradient(circle at 35% 30%,var(--brasshi),var(--brass) 48%,var(--brasslo) 85%);box-shadow:0 1px 1px rgba(0,0,0,.35)}
-.top .tel{font:500 16px/1 var(--text);font-variant-numeric:tabular-nums;text-decoration:none;white-space:nowrap}
-.u{background:linear-gradient(currentColor,currentColor) 0 100%/0 1px no-repeat;transition:background-size .2s}
-a:hover .u,a.u:hover{background-size:100% 1px}
-.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 24px;background:linear-gradient(180deg,#e8c879,var(--brass) 60%,#ae8130);color:#21140b;border:1px solid var(--brasslo);text-decoration:none;font:600 14px/1 var(--text);letter-spacing:.14em;text-transform:uppercase;box-shadow:inset 0 1px 0 rgba(255,244,210,.55),0 2px 0 rgba(0,0,0,.25);white-space:nowrap}
-.btn:hover{background:linear-gradient(180deg,#f0d38b,#cf9f45 60%,#b4873a)}
-.top .btn{min-height:44px;padding:0 20px;font-size:13px}
-.navm{display:none}
+/* tmavá časť: hlavička + hero */
+.dark{background:var(--night);color:var(--on)}
+.top{display:flex;align-items:center;gap:40px;min-height:84px;border-bottom:1px solid var(--online)}
+.mark{display:flex;align-items:baseline;gap:14px;text-decoration:none;margin-right:auto}
+.mark b{font:500 24px/1 var(--head);letter-spacing:.16em;text-transform:uppercase}
+.mark span{font:400 12px/1 var(--head);letter-spacing:.22em;text-transform:uppercase;color:var(--on2)}
+.nav{display:flex;gap:32px}
+.nav a{display:inline-flex;align-items:center;min-height:44px;text-decoration:none;font:400 13.5px/1 var(--head);letter-spacing:.16em;text-transform:uppercase;color:var(--on2);transition:color .2s ease}
+.nav a:hover{color:var(--on)}
+.top .tel{font:500 17px/1 var(--head);letter-spacing:.04em;text-decoration:none;white-space:nowrap}
+.top .btn{min-height:44px;padding:0 20px;font-size:13.5px}
 
-/* remeň */
-main{position:relative;max-width:1280px;margin:0 auto;padding:0 40px}
-main::before{content:"";position:absolute;z-index:0;left:40px;width:var(--sw);top:53px;bottom:49px;
-  background:
-   linear-gradient(rgba(236,205,160,.42) 55%,transparent 0) left 13px top 0/1.5px 11px repeat-y,
-   linear-gradient(rgba(236,205,160,.42) 55%,transparent 0) right 13px top 0/1.5px 11px repeat-y,
-   url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .1 0 0 0 0 .05 0 0 0 0 .02 0 0 0 .55 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.38'/%3E%3C/svg%3E"),
-   linear-gradient(90deg,var(--lthlo),var(--lth) 6%,var(--lthhi) 50%,var(--lth) 94%,var(--lthlo));
-  box-shadow:inset 2px 0 0 rgba(120,74,46,.55),inset -2px 0 0 rgba(120,74,46,.55),18px 26px 50px -24px rgba(28,18,12,.55),0 2px 4px rgba(28,18,12,.25)}
-.row{position:relative;z-index:1;display:grid;grid-template-columns:var(--sw) 1fr;column-gap:var(--gap)}
-.s{--fg:var(--tan);--fg2:var(--tan2);color:var(--fg);padding:44px 54px 52px;min-width:0}
-.w{--fg:var(--ink);--fg2:var(--ink2);color:var(--fg);padding:44px 0 52px;min-width:0}
-.emb{text-shadow:0 -1px 0 rgba(0,0,0,.6),0 1px 0 rgba(255,214,170,.13)}
-/* vyrazená dvojitá linka medzi časťami remeňa */
-.row+.row .s::before,.tail .s::before{content:"";position:absolute;left:30px;width:calc(var(--sw) - 60px);top:0;height:6px;border-top:1px solid rgba(0,0,0,.55);border-bottom:1px solid rgba(0,0,0,.55);box-shadow:0 1px 0 rgba(255,214,170,.1),inset 0 1px 0 rgba(255,214,170,.1)}
+.hero{display:grid;grid-template-columns:minmax(var(--pad),1fr) minmax(0,500px) 72px minmax(0,628px) minmax(0,1fr);min-height:min(600px,82vh)}
+.hero-text{grid-column:2;padding:72px 0;display:flex;flex-direction:column;justify-content:center}
+.hero .lab{color:var(--brass)}
+h1{font:500 clamp(40px,4.9vw,64px)/1.02 var(--head);text-transform:uppercase;letter-spacing:.01em;margin:20px 0 24px}
+.lede{font-size:17.5px;line-height:1.65;color:var(--on);max-width:27em}
+.cta{display:flex;flex-wrap:wrap;align-items:center;gap:16px 28px;margin-top:40px}
+.bigtel{font:400 28px/1 var(--head);letter-spacing:.03em;text-decoration:none;white-space:nowrap;font-variant-numeric:tabular-nums}
+.state{display:flex;align-items:center;gap:12px;margin-top:40px;padding-top:20px;border-top:1px solid var(--online);font:400 15px/1.4 var(--head);letter-spacing:.06em;color:var(--on2)}
+.state b{font-weight:500;color:var(--on)}
+#statusDot{flex:none;width:9px;height:9px;border-radius:999px;background:#6C6A66}
+#statusDot.is-open{background:var(--brass);box-shadow:0 0 0 4px rgba(176,141,87,.22)}
+#statusDot.is-closing{background:var(--brass)}
+.hero-photo{grid-column:4/6;position:relative;overflow:hidden;background:var(--night2)}
+.hero-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:38% 50%}
 
-/* kovanie hore */
-.hang{position:relative;z-index:2;height:112px;width:var(--sw)}
-.hang svg{position:absolute;left:50%;top:0;transform:translateX(-50%)}
-.rod{position:absolute;top:46px;left:-18px;right:-18px;height:14px;border-radius:7px;background:linear-gradient(180deg,var(--brasshi),var(--brass) 45%,var(--brasslo));box-shadow:0 3px 5px rgba(0,0,0,.35)}
-.rod::before,.rod::after{content:"";position:absolute;top:-4px;width:22px;height:22px;border-radius:50%;background:radial-gradient(circle at 38% 32%,var(--brasshi),var(--brass) 50%,var(--brasslo) 90%);box-shadow:0 2px 3px rgba(0,0,0,.35)}
-.rod::before{left:-6px}.rod::after{right:-6px}
-.seam{position:absolute;left:24px;right:24px;height:2px;background:linear-gradient(90deg,rgba(236,205,160,.42) 55%,transparent 0) 0 0/11px 2px repeat-x}
-.rivets{position:absolute;left:0;right:0;display:flex;justify-content:space-around;padding:0 70px}
-.rivets i{width:14px;height:14px;border-radius:50%;background:radial-gradient(circle at 35% 30%,var(--brasshi),var(--brass) 48%,var(--brasslo) 85%);box-shadow:0 1px 2px rgba(0,0,0,.6)}
+.facts{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--online)}
+.facts li{padding:28px 24px 32px 0}
+.facts li+li{padding-left:24px;border-left:1px solid var(--online)}
+.facts b{display:block;font:400 34px/1 var(--head);font-variant-numeric:tabular-nums;color:var(--on)}
+.facts span{display:block;margin-top:10px;font-size:14px;line-height:1.5;color:var(--on2)}
 
-/* hero */
-.hero .s{padding-top:6px}
-.stamp{width:min(300px,80%);margin:4px 0 34px -6px;filter:drop-shadow(0 1px 0 rgba(255,214,170,.22)) drop-shadow(0 -1px 0 rgba(0,0,0,.55))}
-.kicker{font:600 12.5px/1.3 var(--text);letter-spacing:.2em;text-transform:uppercase;color:var(--fg2)}
-h1{font:400 clamp(30px,3.6vw,46px)/1.06 var(--disp);margin:14px 0 18px;letter-spacing:.005em}
-.lede{font-size:18.5px;line-height:1.5;max-width:30em;color:var(--fg)}
-.cta{display:flex;flex-wrap:wrap;align-items:center;gap:14px 22px;margin-top:28px}
-.cta .ghost{display:inline-flex;align-items:center;min-height:48px;text-decoration:none;font:600 14px/1 var(--text);letter-spacing:.14em;text-transform:uppercase;color:var(--fg)}
-.fine{margin-top:12px;font-size:14px;color:var(--fg2)}
-.photo{overflow:hidden;background:#cfc9bf}
-.photo img{width:100%;transition:transform .5s ease}
-.photo:hover img{transform:scale(1.045)}
-figcaption{display:flex;justify-content:space-between;gap:12px;margin-top:12px;padding-top:10px;border-top:1px solid rgba(28,22,19,.18);font:600 12px/1.4 var(--text);letter-spacing:.16em;text-transform:uppercase;color:var(--steeld)}
-.hero .w{padding-top:0;margin-top:-59px}
-.mid{display:flex;flex-direction:column;justify-content:center}
+/* svetlé sekcie */
+.sec{padding:120px 0}
+.sec+.sec{border-top:1px solid var(--line);padding-top:120px}
+.grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:24px}
+.side{grid-column:1/5}
+.main{grid-column:6/13}
+.sec .lab{color:var(--brass-ink)}
+h2{font:500 clamp(30px,3.2vw,42px)/1.08 var(--head);text-transform:uppercase;letter-spacing:.01em;margin:16px 0 24px}
+.side p{color:var(--mute);max-width:24em}
+.side p+p{margin-top:16px}
+.note{font-size:14px;line-height:1.6;padding-top:16px;border-top:1px solid var(--line);margin-top:24px}
 
-/* hodnotenia */
-.label{font:600 12.5px/1.3 var(--text);letter-spacing:.2em;text-transform:uppercase;color:var(--fg2);margin-bottom:18px}
-.ledger li{display:grid;grid-template-columns:160px 1fr;align-items:baseline;gap:18px;padding:20px 0;border-bottom:1px solid rgba(0,0,0,.4);box-shadow:0 1px 0 rgba(255,214,170,.08)}
-.ledger li:last-child{border-bottom:0;box-shadow:none}
-.ledger b{font:400 42px/1 var(--disp);font-variant-numeric:tabular-nums;white-space:nowrap}
-.ledger span{font-size:16.5px;line-height:1.4}
-.ledger small{display:block;color:var(--fg2);font-size:14px}
+.price{width:100%;border-collapse:collapse}
+.price th,.price td{text-align:left;font-weight:400;vertical-align:baseline;padding:22px 0;border-bottom:1px solid var(--line)}
+.price thead th{padding:0 0 14px;font:500 12px/1.3 var(--head);letter-spacing:.2em;text-transform:uppercase;color:var(--mute);border-bottom:1px solid var(--ink)}
+.price tbody th{font-size:19px;line-height:1.35;padding-right:24px}
+.price tbody th small{display:block;margin-top:4px;font-size:14px;color:var(--mute)}
+.price td,.price thead th:last-child{text-align:right;white-space:nowrap}
+.price td{font:400 19px/1.35 var(--head);font-variant-numeric:tabular-nums;letter-spacing:.02em}
+.price td.na{color:var(--mute)}
 
-/* oceľová tabuľka s hodinami */
-.plate{position:relative;color:#20272a;padding:30px 32px 26px;background:repeating-linear-gradient(90deg,rgba(255,255,255,.07) 0 1px,transparent 1px 3px),linear-gradient(158deg,#e2e6e8,#b3bbbf 52%,#cdd3d6);box-shadow:inset 0 1px 0 rgba(255,255,255,.8),inset 0 -1px 0 rgba(0,0,0,.25),0 14px 28px -16px rgba(20,24,26,.55)}
-.plate::before,.plate::after{content:"";position:absolute;top:12px;width:10px;height:10px;border-radius:50%;background:radial-gradient(circle at 35% 30%,var(--brasshi),var(--brass) 50%,var(--brasslo) 88%);box-shadow:0 1px 1px rgba(0,0,0,.4)}
-.plate::before{left:12px}.plate::after{right:12px}
-.plate .eng{text-shadow:0 1px 0 rgba(255,255,255,.6)}
-.plate h2{font:600 12.5px/1.3 var(--text);letter-spacing:.2em;text-transform:uppercase;color:#3b4448}
-.st{display:flex;align-items:center;gap:12px;margin:14px 0 4px;font:500 21px/1.3 var(--text)}
-.st b{font-weight:600}
-#statusDot{flex:none;width:14px;height:14px;border-radius:50%;background:#7d878c;box-shadow:inset 0 1px 2px rgba(0,0,0,.4)}
-#statusDot.is-open{background:radial-gradient(circle at 35% 30%,#fff1bf,#e2b54e 55%,#9c7222);box-shadow:0 0 0 3px rgba(226,181,78,.28)}
-#statusDot.is-closing{background:#b9552f;box-shadow:0 0 0 3px rgba(185,85,47,.22)}
-#todayLabel{font-size:15px;color:#3b4448;font-variant-numeric:tabular-nums}
-.hours{width:100%;border-collapse:collapse;margin-top:20px;font-variant-numeric:tabular-nums;font-size:16px}
-.hours th,.hours td{padding:7px 0;border-top:1px solid rgba(32,39,42,.16);text-align:left;font-weight:400}
+.visit{align-items:start}
+.visit figure{grid-column:1/6}
+.visit .ph{overflow:hidden;background:#DDDAD3}
+.visit .ph img{width:100%;transition:transform .5s ease}
+.visit .ph:hover img{transform:scale(1.045)}
+.visit figcaption{margin-top:16px;padding-top:16px;border-top:1px solid var(--line);font-size:15px;line-height:1.6}
+.visit figcaption span{display:block;margin-top:6px;font:400 12.5px/1.3 var(--head);letter-spacing:.16em;text-transform:uppercase;color:var(--mute)}
+.visit .main{grid-column:7/13}
+.hours{width:100%;border-collapse:collapse;margin-top:8px;font:400 18px/1.3 var(--head);font-variant-numeric:tabular-nums;letter-spacing:.03em}
+.hours th,.hours td{padding:14px 0;border-bottom:1px solid var(--line);text-align:left;font-weight:400}
+.hours tr:first-child th,.hours tr:first-child td{border-top:1px solid var(--ink)}
 .hours td{text-align:right}
-.hours tr[data-today] th,.hours tr[data-today] td{font-weight:600}
-.hours tr[data-today] th::before{content:"";display:inline-block;width:8px;height:8px;margin-right:9px;border-radius:50%;background:var(--brass);vertical-align:1px}
-.plate .src{margin-top:14px;font-size:13.5px;color:#3b4448}
+.hours .off td{color:var(--mute)}
+.hours tr[data-today] th,.hours tr[data-today] td{font-weight:500}
+.hours tr[data-today] th::after{content:"dnes";margin-left:12px;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--brass-ink)}
+.src{margin-top:16px;font-size:14px;color:var(--mute)}
+.howto{margin-top:72px}
+.howto h3{font:500 22px/1.2 var(--head);text-transform:uppercase;letter-spacing:.04em;margin-bottom:16px}
+.howto p{color:var(--mute);max-width:30em}
+.howto .cta{margin-top:24px}
+.howto .btn:hover{color:var(--brass-ink);border-color:var(--brass-ink)}
+.howto .alt{font:400 15px/1 var(--head);letter-spacing:.12em;text-transform:uppercase;display:inline-flex;align-items:center;min-height:44px}
 
-/* služby — razba fóliou */
-h2.big{font:400 clamp(30px,3.4vw,42px)/1.05 var(--disp);margin-bottom:8px}
-.svc{margin-top:26px}
-.svc li{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 16px;padding:17px 0 15px;border-top:1px solid rgba(0,0,0,.5);box-shadow:inset 0 1px 0 rgba(255,214,170,.08)}
-.svc li:last-child{border-bottom:1px solid rgba(0,0,0,.5)}
-.foil{font:400 23px/1.15 var(--disp);background:linear-gradient(180deg,var(--brasshi) 10%,#d6a84c 55%,#a4782b 92%);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 -1px 0 rgba(0,0,0,.65))}
-.svc .d{margin-left:auto;font:500 15.5px/1.2 var(--text);font-variant-numeric:tabular-nums;color:var(--tan);white-space:nowrap}
-.svc .x{flex-basis:100%;font-size:14.5px;color:var(--fg2)}
-.demo{display:inline-block;margin-top:6px;padding:5px 10px;border:1px dashed rgba(230,203,165,.45);font:600 11.5px/1.3 var(--text);letter-spacing:.16em;text-transform:uppercase;color:var(--fg2)}
-.book{max-width:440px}
-.book h3{font:400 30px/1.1 var(--disp);margin:0 0 14px}
-.book p{color:var(--fg2)}
-.book p+p{margin-top:12px}
-.book .cta{margin-top:24px}
-.book .note{margin-top:30px;padding-top:14px;border-top:1px solid rgba(28,22,19,.18);font-size:14.5px}
+.contact{grid-template-columns:repeat(3,minmax(0,1fr));column-gap:24px;margin-top:40px;border-top:1px solid var(--ink)}
+.contact > div{padding:24px 24px 0 0}
+.contact > div+div{padding-left:24px;border-left:1px solid var(--line)}
+.contact .k{font:500 12px/1.3 var(--head);letter-spacing:.2em;text-transform:uppercase;color:var(--mute);margin-bottom:16px}
+.contact address,.contact .big{font:400 22px/1.4 var(--head);letter-spacing:.02em}
+.contact .big{font-variant-numeric:tabular-nums}
+.contact .big a,.contact address a{text-decoration:none}
+.contact ul{margin-top:16px}
+.contact li a{display:inline-flex;align-items:center;min-height:44px;font-size:15.5px;text-decoration:none;overflow-wrap:anywhere}
+.mail{font-size:15.5px;margin-top:8px}
+.mail a{display:inline-flex;min-height:44px;align-items:center;overflow-wrap:anywhere}
 
-/* kontakt */
-.addr{font:600 24px/1.3 var(--text);font-style:normal;margin:20px 0 22px}
-.lines li{display:grid;grid-template-columns:96px 1fr;gap:14px;align-items:baseline;padding:10px 0;border-top:1px solid rgba(0,0,0,.42)}
-.lines .k{font:600 12px/1.3 var(--text);letter-spacing:.18em;text-transform:uppercase;color:var(--fg2)}
-.lines a{text-decoration:none;font-size:18px;font-variant-numeric:tabular-nums;overflow-wrap:anywhere;display:inline-block;padding:8px 0;margin:-8px 0}
-.find li{border-top:1px solid rgba(28,22,19,.18)}
-.find li:last-child{border-bottom:1px solid rgba(28,22,19,.18)}
-.find a{display:flex;justify-content:space-between;align-items:center;gap:16px;min-height:58px;text-decoration:none;font-size:18px}
-.find small{font:600 12px/1 var(--text);letter-spacing:.18em;text-transform:uppercase;color:var(--steeld)}
-
-/* koniec remeňa */
-.tail{height:132px}
-.tail .s{position:relative;padding:0;height:132px}
-.tail .seam{top:22px}.tail .rivets{top:36px}
-.tail .rod{top:76px;left:-18px;right:-18px}
-.tail svg{position:absolute;left:50%;top:88px;transform:translateX(-50%)}
-footer{max-width:1280px;margin:0 auto;padding:30px 40px 40px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px 30px;font-size:14px;color:var(--ink2)}
+footer{background:var(--night);color:var(--on2);font-size:14px}
+footer .wrap{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:16px 40px;padding-top:40px;padding-bottom:40px}
+footer b{font:500 18px/1 var(--head);letter-spacing:.16em;text-transform:uppercase;color:var(--on)}
 .mbar{display:none}
 
-@media (max-width:1080px){:root{--sw:540px;--gap:44px}.nav ul{gap:18px}.top{gap:22px}.top .tel{display:none}}
-@media (max-width:900px){
-  :root{--sw:auto}
-  .top{padding:16px 16px 10px;gap:14px}
-  .mark span{display:none}
-  .nav{display:none}
-  .navm{display:flex;justify-content:space-between;gap:8px;padding:0 16px 8px;max-width:640px;margin:0 auto}
-  .navm a{font-size:12.5px;letter-spacing:.14em}
-  main{padding:0 10px;max-width:640px}
-  main::before{left:10px;right:10px;width:auto}
-  .row{grid-template-columns:1fr}
-  .hang{width:auto}
-  .w{--fg:var(--tan);--fg2:var(--tan2);padding:0 26px 40px}
-  .s{padding:36px 26px 30px}
-  .hero .w{padding-bottom:36px;margin-top:0}
-  .row+.row .s::before,.tail .s::before{left:20px;width:auto;right:20px}
-  .row+.row .w{padding-top:0}
-  figcaption{color:var(--tan2);border-top-color:rgba(0,0,0,.45)}
-  .book .note,.find li,.find li:last-child{border-color:rgba(0,0,0,.45)}
-  .find small{color:var(--tan2)}
-  .rivets{padding:0 40px}
-  .rod,.tail .rod{left:-3px;right:-3px}.rod::before{left:-4px}.rod::after{right:-4px}
-  .tail .w{display:none}
-  footer{padding:24px 16px 104px}
-  .mbar{display:grid;grid-template-columns:1fr 1.3fr;position:fixed;z-index:20;left:0;right:0;bottom:0;padding:8px 10px calc(8px + env(safe-area-inset-bottom));gap:8px;background:rgba(28,22,19,.96);box-shadow:0 -6px 18px rgba(0,0,0,.25)}
-  .mbar a{min-height:50px;display:flex;align-items:center;justify-content:center;text-decoration:none;font:600 14px/1 var(--text);letter-spacing:.14em;text-transform:uppercase}
-  .mbar .call{color:var(--tan);border:1px solid rgba(230,203,165,.4)}
+@media (max-width:1100px){
+  .nav{gap:22px}.top{gap:24px}.top .tel{display:none}
+  .facts b{font-size:28px}
 }
-@media (max-width:420px){
-  .ledger li{grid-template-columns:104px 1fr;gap:12px}
-  .ledger b{font-size:30px}
-  .foil{font-size:20px}
-  .addr{font-size:21px}
-  .lines li{grid-template-columns:80px 1fr}
-  .lines a{font-size:16.5px}
-  .plate{padding:28px 20px 22px}
-  .lede{font-size:17.5px}
+@media (max-width:880px){
+  :root{--pad:24px}
+  .nav{display:none}
+  .hero{grid-template-columns:var(--pad) minmax(0,1fr) var(--pad);min-height:0}
+  .hero-text{grid-column:2;padding:48px 0 40px}
+  .hero-photo{grid-column:1/-1;grid-row:2;aspect-ratio:3/2}
+  .facts{grid-template-columns:1fr 1fr}
+  .facts li:nth-child(3){padding-left:0;border-left:0}
+  .facts li:nth-child(n+3){border-top:1px solid var(--online)}
+  .sec{padding:72px 0}.sec+.sec{padding-top:72px}
+  .side,.main,.visit figure,.visit .main{grid-column:1/-1}
+  .main{margin-top:40px}
+  .visit .main{margin-top:40px}
+  .contact{grid-template-columns:1fr}
+  .contact > div,.contact > div+div{padding:24px 0;border-left:0}
+  .contact > div+div{border-top:1px solid var(--line)}
+  footer .wrap{padding-bottom:calc(112px + env(safe-area-inset-bottom))}
+  .mbar{display:grid;grid-template-columns:1fr 1fr;gap:8px;position:fixed;z-index:20;left:0;right:0;bottom:0;padding:8px 16px calc(8px + env(safe-area-inset-bottom));background:var(--night);border-top:1px solid var(--online);box-shadow:0 -4px 16px rgba(0,0,0,.18)}
+  .mbar a{min-height:50px;padding:0 12px;font-size:14px}
+}
+@media (max-width:520px){
+  :root{--pad:16px}
+  .top{min-height:68px;gap:12px}
+  .mark span{display:none}
+  .mark b{font-size:21px}
+  .top .btn{padding:0 16px}
+  h1{font-size:40px}
+  .lede{font-size:16.5px}
+  .cta{gap:16px;margin-top:32px}
+  .cta .btn{width:100%}
+  .facts li{padding:20px 12px 24px 0}
+  .facts li+li{padding-left:12px}
+  .facts li:nth-child(3){padding-left:0}
+  .facts b{font-size:26px}
+  .facts span{font-size:13px}
+  .price tbody th{font-size:17px}
+  .price td{font-size:17px}
+  .hours{font-size:17px}
+  .howto{margin-top:56px}
+  .contact address,.contact .big{font-size:20px}
 }
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
 
-<p class="notice">Neoficiálny návrh — nie je to oficiálny web podniku · ukážka od Darwon · rezervácia vedie do ukážkovej administrácie, podnik ju nedostane</p>
+<p class="notice">Neoficiálny návrh — nie je to oficiálny web podniku · ukážka od Darwon, objednávky ani rezervácie tu nefungujú</p>
 
-<header class="top">
-  <a class="mark" href="#top" aria-label="Modifié Barber Salon — na začiatok"><b>Modifié</b><span>Barber Salon · Topoľčany</span></a>
-  <nav class="nav" aria-label="Hlavná navigácia"><ul>
-    <li><a href="#sluzby"><i class="rivet"></i><span class="u">Služby</span></a></li>
-    <li><a href="#hodiny"><i class="rivet"></i><span class="u">Hodiny</span></a></li>
-    <li><a href="#kontakt"><i class="rivet"></i><span class="u">Kontakt</span></a></li>
-  </ul></nav>
-  <a class="tel u" href="tel:+421918344952">0918 344 952</a>
-  <a class="btn" href="https://modifie-barber-darwon.vercel.app/rezervacia">Objednať sa</a>
-</header>
-<nav class="navm" aria-label="Navigácia">
-  <a href="#sluzby"><i class="rivet"></i>Služby</a><a href="#hodiny"><i class="rivet"></i>Hodiny</a><a href="#kontakt"><i class="rivet"></i>Kontakt</a>
-</nav>
+<div class="dark">
+  <header class="wrap top">
+    <a class="mark" href="#top" aria-label="Modifié Barber Salon — na začiatok"><b>Modifié</b><span>Barber Salon · Topoľčany</span></a>
+    <nav class="nav" aria-label="Hlavná navigácia">
+      <a href="#sluzby">Služby</a><a href="#hodiny">Hodiny</a><a href="#kontakt">Kontakt</a>
+    </nav>
+    <a class="tel u" href="tel:+421918344952">0918 344 952</a>
+    <a class="btn" href="tel:+421918344952">Zavolať</a>
+  </header>
 
-<main id="top">
-  <div class="hang" aria-hidden="true">
-    <svg width="56" height="72" viewBox="0 0 56 72"><defs><linearGradient id="br" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f2d993"/><stop offset=".5" stop-color="#c6963b"/><stop offset="1" stop-color="#7f5a1c"/></linearGradient></defs>
-      <path d="M28 24v18" stroke="#7f5a1c" stroke-width="6" stroke-linecap="round"/><path d="M28 24v18" stroke="url(#br)" stroke-width="4"/>
-      <circle cx="28" cy="53" r="11" fill="none" stroke="#7f5a1c" stroke-width="6"/><circle cx="28" cy="53" r="11" fill="none" stroke="url(#br)" stroke-width="4"/>
-      <circle cx="28" cy="14" r="13" fill="url(#br)" stroke="rgba(60,40,10,.35)"/><circle cx="28" cy="14" r="5" fill="none" stroke="rgba(90,60,15,.55)" stroke-width="1.5"/><path d="M25 14h6" stroke="#5e4212" stroke-width="1.6" stroke-linecap="round"/></svg>
-    <div class="rod"></div>
-    <div class="seam" style="top:76px"></div>
-    <div class="rivets" style="top:89px"><i></i><i></i><i></i></div>
-  </div>
-
-  <section class="row hero" aria-labelledby="h1">
-    <div class="s">
-      <img class="stamp" src="assets/modifie-logo-razba.webp" width="419" height="211" alt="Logo Modifié Barber Salon, est. 2022, vyrazené do kože">
-      <p class="kicker emb">Sama Chalupku · Topoľčany</p>
-      <h1 id="h1" class="emb">Pánske holičstvo v&nbsp;Topoľčanoch</h1>
-      <p class="lede">Strih, úprava brady aj farbenie — na objednávku, v salóne na Sama Chalupku 2256/1.</p>
+  <main id="top">
+  <section class="hero" aria-labelledby="h1">
+    <div class="hero-text">
+      <p class="lab">Modifié Barber Salon</p>
+      <h1 id="h1">Pánske holičstvo v&nbsp;Topoľčanoch</h1>
+      <p class="lede">Strih, úprava brady a&nbsp;farbenie v&nbsp;salóne na Sama Chalupku 2256/1. Strihá sa na objednávku — termín si dohodnete telefonicky.</p>
       <div class="cta">
-        <a class="btn" href="https://modifie-barber-darwon.vercel.app/rezervacia">Objednať sa</a>
-        <a class="ghost" href="tel:+421918344952"><span class="u">Zavolať 0918 344 952</span></a>
+        <a class="btn" href="tel:+421918344952">Zavolať a dohodnúť termín</a>
+        <a class="bigtel u" href="tel:+421918344952">0918 344 952</a>
       </div>
-      <p class="fine">Online rezervácia — vyberiete si deň a čas, potvrdenie príde e-mailom.</p>
+      <p class="state" aria-live="polite"><span id="statusDot"></span><span id="statusText">Pondelok až piatok, na objednávku</span></p>
     </div>
-    <div class="w">
-      <figure>
-        <div class="photo"><img src="assets/salon-interier.webp" width="690" height="860" fetchpriority="high" alt="Interiér salónu Modifié: holičské kreslo pred okrúhlym podsvieteným zrkadlom, horčicovo žlté závesy a pohovka, drevená podlaha"></div>
-        <figcaption><span>Salón Modifié</span><span>Sama Chalupku 2256/1</span></figcaption>
-      </figure>
+    <div class="hero-photo">
+      <img src="assets/salon-interier.webp" width="1148" height="740" fetchpriority="high" alt="Interiér salónu Modifié: holičské kreslo pred okrúhlym podsvieteným zrkadlom, horčicovo žltá pohovka a závesy, drevená podlaha">
     </div>
   </section>
 
-  <section class="row" aria-label="Hodnotenia a otváracie hodiny">
-    <div class="s mid">
-      <p class="label emb">Čísla salónu</p>
-      <ul class="ledger">
-        <li><b class="emb">5,0</b><span>hodnotenie na Google<small>41 recenzií · október 2026</small></span></li>
-        <li><b class="emb">100&nbsp;%</b><span>odporúča na Facebooku<small>9 hodnotení</small></span></li>
-        <li><b class="emb">2022</b><span>v prevádzke od 9. mája<small>„Pánske holičstvo v Topoľčanoch.“ — ich Facebook</small></span></li>
-      </ul>
-    </div>
-    <div class="w" id="hodiny">
-      <div class="plate">
-        <h2 class="eng">Otváracie hodiny</h2>
-        <p class="st eng"><span id="statusDot"></span><span id="statusText">Strihá sa na objednávku</span></p>
-        <p id="todayLabel" class="eng"></p>
-        <table class="hours eng">
-          <caption class="vh">Otváracie hodiny podľa dní</caption>
-          <tr data-day="1"><th scope="row">Pondelok</th><td>8:30–16:00</td></tr>
-          <tr data-day="2"><th scope="row">Utorok</th><td>8:30–16:00</td></tr>
-          <tr data-day="3"><th scope="row">Streda</th><td>8:30–18:00</td></tr>
-          <tr data-day="4"><th scope="row">Štvrtok</th><td>8:30–16:00</td></tr>
-          <tr data-day="5"><th scope="row">Piatok</th><td>8:30–18:00</td></tr>
-          <tr data-day="6"><th scope="row">Sobota</th><td>zatvorené</td></tr>
-          <tr data-day="0"><th scope="row">Nedeľa</th><td>zatvorené</td></tr>
-        </table>
-        <p class="src eng">Na objednávku · hodiny podľa Google profilu salónu</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="row" id="sluzby" aria-labelledby="h-sluzby">
-    <div class="s">
-      <p class="label emb">Vyrazené do kože</p>
-      <h2 class="big emb" id="h-sluzby">Služby</h2>
-      <span class="demo">Ukážka návrhu · bez cien</span>
-      <ul class="svc">
-        <li><span class="foil">Pánsky strih</span><span class="d">30–60 min</span></li>
-        <li><span class="foil">Úprava brady</span><span class="d">30 min</span></li>
-        <li><span class="foil">Strih + úprava brady</span><span class="d">60–90 min</span></li>
-        <li><span class="foil">Úprava brady + farbenie</span><span class="d">75–90 min</span></li>
-        <li><span class="foil">Kompletná starostlivosť</span><span class="d">90–120 min</span><span class="x">strih + brada + farbenie</span></li>
-        <li><span class="foil">Strih „na koleno“</span><span class="d">30 min</span></li>
-        <li><span class="foil">Junior strih</span></li>
-      </ul>
-    </div>
-    <div class="w">
-      <div class="book">
-        <p class="label">Ako sa objednať</p>
-        <h3>Na objednávku</h3>
-        <p>Salón strihá na objednávku. Termín si zarezervujete online — vyberiete si deň a čas, potvrdenie príde e-mailom.</p>
-        <p>Ak vám viac sedí telefón, zavolajte na <a class="u" href="tel:+421918344952">0918 344 952</a>.</p>
-        <div class="cta">
-          <a class="btn" href="https://modifie-barber-darwon.vercel.app/rezervacia">Objednať sa</a>
-        </div>
-        <p class="note">Ukážka návrhu: názvy služieb a ich trvanie sú prepísané z cenníka, ktorý salón zverejnil na Facebooku. Ceny tu zámerne nie sú — doplníme ich podľa aktuálneho cenníka.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="row" id="kontakt" aria-labelledby="h-kontakt">
-    <div class="s">
-      <h2 class="big emb" id="h-kontakt">Kontakt</h2>
-      <address class="addr emb">Sama Chalupku 2256/1<br>955 01 Topoľčany</address>
-      <ul class="lines">
-        <li><span class="k">Telefón</span><a class="u" href="tel:+421918344952">+421 918 344 952</a></li>
-        <li><span class="k">E-mail</span><a class="u" href="mailto:modifie.barber@gmail.com">modifie.barber@gmail.com</a></li>
-      </ul>
-    </div>
-    <div class="w">
-      <p class="label">Kde nás nájdete</p>
-      <ul class="find">
-        <li><a href="https://www.google.com/maps/search/Modifie+Barber+Salon+Topo%C4%BE%C4%8Dany" rel="noopener"><span class="u">Navigovať v Google Maps</span><small>Mapa</small></a></li>
-        <li><a href="https://www.instagram.com/modifie.barber.topolcany/" rel="noopener"><span class="u">@modifie.barber.topolcany</span><small>Instagram</small></a></li>
-        <li><a href="https://www.facebook.com/modifie.barber.salon.topolcany" rel="noopener"><span class="u">Modifié Barber Salon</span><small>Facebook</small></a></li>
-      </ul>
-    </div>
-  </section>
-
-  <div class="row tail" aria-hidden="true">
-    <div class="s">
-      <div class="seam"></div>
-      <div class="rivets"><i></i><i></i><i></i></div>
-      <div class="rod"></div>
-      <svg width="150" height="44" viewBox="0 0 150 44"><path fill-rule="evenodd" fill="#2a160e" d="M14 0h122v18c0 14-12 26-26 26H40C26 44 14 32 14 18zM52 14h46a7 7 0 0 1 0 14H52a7 7 0 0 1 0-14z"/><path d="M20 4h110" stroke="rgba(236,205,160,.35)" stroke-dasharray="6 5"/></svg>
-    </div>
-    <div class="w"></div>
+  <div class="wrap">
+    <ul class="facts" aria-label="Salón v číslach">
+      <li><b>5,0&thinsp;/&thinsp;5</b><span>hodnotenie na Google, 41 recenzií</span></li>
+      <li><b>100&nbsp;%</b><span>odporúča na Facebooku, 9 hodnotení</span></li>
+      <li><b>Po–Pi</b><span>od 8:30, v stredu a v piatok do 18:00</span></li>
+      <li><b>2022</b><span>v prevádzke od 9. mája 2022</span></li>
+    </ul>
   </div>
-</main>
+  </main>
+</div>
+
+<section class="sec" id="sluzby" aria-labelledby="h-sluzby">
+  <div class="wrap grid">
+    <div class="side">
+      <p class="lab">Služby</p>
+      <h2 id="h-sluzby">Strih, brada, farbenie</h2>
+      <p>Prehľad služieb s&nbsp;orientačným trvaním, ako ich salón uvádza vo svojom cenníku.</p>
+      <p class="note">Ukážka návrhu: ceny tu zámerne nie sú. Salón ohlásil nový cenník na rok 2026 — doplnia sa podľa neho.</p>
+    </div>
+    <div class="main">
+      <table class="price">
+        <caption class="lab" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">Služby a trvanie</caption>
+        <thead><tr><th scope="col">Služba</th><th scope="col">Trvanie</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Pánsky strih</th><td>30–60 min</td></tr>
+          <tr><th scope="row">Úprava brady</th><td>30 min</td></tr>
+          <tr><th scope="row">Strih + úprava brady</th><td>60–90 min</td></tr>
+          <tr><th scope="row">Úprava brady + farbenie</th><td>75–90 min</td></tr>
+          <tr><th scope="row">Kompletná starostlivosť<small>strih, brada a farbenie</small></th><td>90–120 min</td></tr>
+          <tr><th scope="row">Strih „na koleno“</th><td>30 min</td></tr>
+          <tr><th scope="row">Junior strih</th><td class="na">—</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="hodiny" aria-labelledby="h-hodiny">
+  <div class="wrap grid visit">
+    <figure>
+      <div class="ph"><img src="assets/salon-kreslo.webp" width="480" height="550" loading="lazy" alt="Holičské kreslo a pracovný pult s okrúhlym podsvieteným zrkadlom v salóne Modifié"></div>
+      <figcaption>„Pánske holičstvo v Topoľčanoch. V prevádzke od 9. mája 2022.“<span>Salón o sebe na Facebooku</span></figcaption>
+    </figure>
+    <div class="main">
+      <p class="lab">Otváracie hodiny</p>
+      <h2 id="h-hodiny">Pondelok až piatok</h2>
+      <table class="hours">
+        <caption style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">Otváracie hodiny podľa dní</caption>
+        <tr data-day="1"><th scope="row">Pondelok</th><td>8:30–16:00</td></tr>
+        <tr data-day="2"><th scope="row">Utorok</th><td>8:30–16:00</td></tr>
+        <tr data-day="3"><th scope="row">Streda</th><td>8:30–18:00</td></tr>
+        <tr data-day="4"><th scope="row">Štvrtok</th><td>8:30–16:00</td></tr>
+        <tr data-day="5"><th scope="row">Piatok</th><td>8:30–18:00</td></tr>
+        <tr data-day="6" class="off"><th scope="row">Sobota</th><td>zatvorené</td></tr>
+        <tr data-day="0" class="off"><th scope="row">Nedeľa</th><td>zatvorené</td></tr>
+      </table>
+      <p class="src">Na objednávku · hodiny podľa Google profilu salónu</p>
+
+      <div class="howto">
+        <h3>Ako sa objednať</h3>
+        <p>Salón strihá na objednávku. Zavolajte a&nbsp;dohodnite si deň a&nbsp;čas, alebo napíšte e-mail.</p>
+        <div class="cta">
+          <a class="btn" href="tel:+421918344952">Zavolať 0918 344 952</a>
+          <a class="alt u" href="mailto:modifie.barber@gmail.com">Napísať e-mail</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="kontakt" aria-labelledby="h-kontakt">
+  <div class="wrap">
+    <p class="lab">Kontakt</p>
+    <h2 id="h-kontakt">Sama Chalupku, Topoľčany</h2>
+    <div class="grid contact">
+      <div>
+        <p class="k">Adresa</p>
+        <address>Sama Chalupku 2256/1<br>955 01 Topoľčany</address>
+        <ul><li><a href="https://www.google.com/maps/search/Modifie+Barber+Salon+Topo%C4%BE%C4%8Dany" rel="noopener"><span class="u">Zistiť cestu v Google Maps</span></a></li></ul>
+      </div>
+      <div>
+        <p class="k">Telefón a e-mail</p>
+        <p class="big"><a class="u" href="tel:+421918344952">+421 918 344 952</a></p>
+        <p class="mail"><a class="u" href="mailto:modifie.barber@gmail.com">modifie.barber@gmail.com</a></p>
+      </div>
+      <div>
+        <p class="k">Sociálne siete</p>
+        <ul>
+          <li><a href="https://www.instagram.com/modifie.barber.topolcany/" rel="noopener"><span class="u">Instagram · @modifie.barber.topolcany</span></a></li>
+          <li><a href="https://www.facebook.com/modifie.barber.salon.topolcany" rel="noopener"><span class="u">Facebook · Modifié Barber Salon</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
 
 <footer>
-  <p>Neoficiálny návrh webu · Darwon · 2026</p>
-  <p>Modifié Barber Salon · Sama Chalupku 2256/1, Topoľčany</p>
+  <div class="wrap">
+    <b>Modifié</b>
+    <p>Pánske holičstvo · Sama Chalupku 2256/1, 955 01 Topoľčany</p>
+    <p>Neoficiálny návrh webu · Darwon · 2026</p>
+  </div>
 </footer>
 
 <nav class="mbar" aria-label="Rýchle akcie">
-  <a class="call" href="tel:+421918344952">Zavolať</a>
-  <a class="btn" href="https://modifie-barber-darwon.vercel.app/rezervacia">Objednať sa</a>
+  <a class="btn" href="tel:+421918344952">Zavolať</a>
+  <a class="btn ghost" href="https://www.google.com/maps/search/Modifie+Barber+Salon+Topo%C4%BE%C4%8Dany" rel="noopener">Zistiť cestu</a>
 </nav>
 
 <script>
 (function(){
   "use strict";
   var HOURS = {1:[[510,960]],2:[[510,960]],3:[[510,1080]],4:[[510,960]],5:[[510,1080]]};
-  var NOTES = {};
   var W = {open:"Teraz otvorené", closing:"Zatvárame o", closed:"Teraz zatvorené", next:"otvárame"};
-
   var ACC = ["v nedeľu","v pondelok","v utorok","v stredu","vo štvrtok","v piatok","v sobotu"];
   function now(){
     try{
@@ -351,10 +330,9 @@ footer{max-width:1280px;margin:0 auto;padding:30px 40px 40px;display:flex;flex-w
       return { day:{Sun:0,Mon:1,Tue:2,Wed:3,Thu:4,Fri:5,Sat:6}[m.weekday], mins:(parseInt(m.hour,10)%24)*60 + parseInt(m.minute,10) };
     }catch(err){ var d = new Date(); return { day:d.getDay(), mins:d.getHours()*60 + d.getMinutes() }; }
   }
-  function hm(t){ if(t >= 1440) return "polnoci"; var h = Math.floor(t/60), m = t%60; return h + ":" + (m<10?"0":"") + m; }
+  function hm(t){ var h = Math.floor(t/60), m = t%60; return h + ":" + (m<10?"0":"") + m; }
   function status(n){
-    var spans = HOURS[n.day] || [], prev = HOURS[(n.day+6)%7] || [];
-    for(var j=0;j<prev.length;j++){ if(prev[j][1] > 1440 && n.mins < prev[j][1]-1440) return {open:true, end:prev[j][1]-1440}; }
+    var spans = HOURS[n.day] || [];
     for(var i=0;i<spans.length;i++){ if(n.mins >= spans[i][0] && n.mins < spans[i][1]) return {open:true, end:spans[i][1]}; }
     for(var k=0;k<spans.length;k++){ if(spans[k][0] > n.mins) return {open:false, when:"dnes o " + hm(spans[k][0])}; }
     for(var d=1; d<=7; d++){ var dd = (n.day+d)%7, s = HOURS[dd]; if(s && s.length) return {open:false, when:(d===1 ? "zajtra" : ACC[dd]) + " o " + hm(s[0][0])}; }
@@ -362,45 +340,21 @@ footer{max-width:1280px;margin:0 auto;padding:30px 40px 40px;display:flex;flex-w
   }
   function render(){
     var n = now(), dot = document.getElementById("statusDot"), text = document.getElementById("statusText");
-    if(HOURS && dot && text){
+    if(dot && text){
       var st = status(n);
       if(st.open){
         var left = st.end - n.mins;
         if(left <= 60){ dot.className = "is-closing"; text.innerHTML = W.closing + " " + hm(st.end) + " · <b>ešte " + left + " min</b>"; }
         else { dot.className = "is-open"; text.innerHTML = W.open + " · <b>do " + hm(st.end) + "</b>"; }
       }else{
-        var note = NOTES[n.day], noted = note && !(HOURS[n.day]||[]).length;
-        dot.className = noted ? "is-note" : "is-closed";
-        text.innerHTML = noted ? "Dnes " + note : W.closed + (st.when ? " · <b>" + W.next + " " + st.when + "</b>" : "");
+        dot.className = "is-closed";
+        text.innerHTML = W.closed + (st.when ? " · <b>" + W.next + " " + st.when + "</b>" : "");
       }
     }
-    var label = document.getElementById("todayLabel");
-    if(HOURS && label && !label.textContent){
-      var s = HOURS[n.day] || [];
-      if(s.length) label.textContent = "Dnes " + s.map(function(x){ return hm(x[0]) + "–" + (x[1] >= 1440 ? "0:00" : hm(x[1])); }).join(", ");
-      else if(!NOTES[n.day]) label.textContent = "Dnes zatvorené";
-    }
+    [].forEach.call(document.querySelectorAll("[data-today]"), function(r){ r.removeAttribute("data-today"); });
     [].forEach.call(document.querySelectorAll('[data-day="' + n.day + '"]'), function(r){ r.setAttribute("data-today",""); });
   }
   render(); setInterval(render, 60000);
-
-  var tabs = [].slice.call(document.querySelectorAll("[data-dow][aria-controls]"));
-  if(tabs.length){
-    var n = now(), pick = null;
-    tabs.forEach(function(t){ if(+t.getAttribute("data-dow") === n.day) pick = t; });
-    if(!pick) pick = (n.day === 0 || n.day === 6) ? tabs[tabs.length-1] : tabs[0];
-    function select(t){
-      tabs.forEach(function(x){ var on = x === t; x.setAttribute("aria-selected", on ? "true" : "false");
-        var p = document.getElementById(x.getAttribute("aria-controls")); if(p) p.hidden = !on; });
-    }
-    tabs.forEach(function(t){ t.addEventListener("click", function(){ select(t); }); });
-    select(pick);
-    var td = document.getElementById("todayDish");
-    if(td && +pick.getAttribute("data-dow") === n.day){
-      var first = document.querySelector("#" + pick.getAttribute("aria-controls") + " .dish-name");
-      if(first) td.textContent = first.firstChild.textContent.trim();
-    }
-  }
 })();
 </script>
 </html>
